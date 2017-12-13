@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="jquery.dataTables.min.css">
+    <script src="services.js"></script>
+    <script src="api2table.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var table = $('#tbl');
+            GenerateTable(services[0], table, false, true);
+        });
+    </script>
+</head>
+
+<body>
+    <table id="tbl"></table>
+</body>
+
+</html>
